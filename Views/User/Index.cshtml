@@ -7,6 +7,11 @@
 <h2>Index</h2>
 
 <p>
+    @using (Html.BeginForm("Index", "User", FormMethod.Get))
+    {
+        <input type="text" name="searchQuery" placeholder="Search..." />
+        <button type="submit">Search</button>
+    }
     @Html.ActionLink("Create New", "Create")
 </p>
 <table class="table">
